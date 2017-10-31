@@ -1,11 +1,13 @@
 h1{
   color: #E34E45;
   font-weight: 600;
+  font-family: 'rubik', sans-serif;
 }
 body{
   background-color: lightpink;
   display: flex;
   justify-content: center;
+  font-family: 'roboto', monospace;
 }
 .container{
   background-color: white;
@@ -35,10 +37,12 @@ cursor: pointer;
   text-align: center;
 }
 .form{
-  position: relative;
+  font-family: 'roboto', monospace;
+  position: absolute;
   text-align: left;
-  top: -210px;
-  left: -20px;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: white;
   height: 310px;
   width: 300px;
@@ -70,6 +74,7 @@ padding-top: 30px;
 margin-left: 10px;
     color: #E34E45;
   font-weight: 600;
+  font-family: 'rubik', sans-serif;
 }
 h5{
   margin-left: 10px;
@@ -82,4 +87,44 @@ h5{
 }
 .available:hover{
   background-color: #ADAAAA;
+}
+.box{
+  position: absolute;
+ text-align: left;
+  height: 50;
+  width: 50;
+  background-color: grey;
+  display: none;
+  border-radius: 5%;
+  border: 1px solid black;
+  padding: 5px;
+}
+#B1,#B4,#B7{
+  float: left;
+  margin-left: 50px;
+  transform: translateX(-50%);
+}
+#B2,#B5,#B8{
+  left: 50%;
+  transform: translateX(-50%);
+}
+#B3,#B6,#B9{
+  float: right;
+  margin-left: 200px;
+  transform: translateX(-50%);
+}
+#B1,#B2,#B3{
+  top: 180px;
+}
+#B4,#B5,#B6{
+  top: 250px;
+}
+#B7,#B8,#B9{
+  top: 320px;
+}
+#name:focus,
+#phone:focus,
+#number:focus,
+button:focus{
+    outline: none;
 }
