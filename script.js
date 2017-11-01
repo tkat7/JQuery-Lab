@@ -13,15 +13,9 @@ $(".close").click(function() {
   $(".form").fadeOut();
 });
 
-mouse(1);
-mouse(2);
-mouse(3);
-mouse(4);
-mouse(5);
-mouse(6);
-mouse(7);
-mouse(8);
-mouse(9);
+for (var i = 0; i < 9; i++) {
+  mouse(i);
+}
 
 function mouse(circle) {
   $("#T" + circle).mouseover(function() {
